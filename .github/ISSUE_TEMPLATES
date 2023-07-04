@@ -1,0 +1,13 @@
+As a user
+I need to be able to reset my password
+So that I can regain access to my account if I forget my password
+
+Details and Assumptions
+* The user has already registered an account with the system
+* The system has an email service to send password reset instructions
+Acceptance Criteria
+gherkin
+Given a registered user
+When I click on the "Forgot Password" link
+Then I should receive an email with instructions on how to reset my password
+And the email should contain a unique password reset link
